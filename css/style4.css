@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    background-color: #a76f02;
+    color: black;
+    font-family: 'Griffy', sans-serif;
+    font-size: 2.778vw;
+    justify-content: flex-start; 
+}
+.main__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.main__images{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+.main__images-element{
+    flex-grow: 1; 
+}
+.main__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    background-color: black;
+    color:#a76f02;
+}
+
+.main__links-elements{
+    margin-bottom: 1.098vw;
+    list-style-type: none;
+}
+
+.main__links li + li{
+    margin-top: 1.098vw;
+}
+
+.main__content-element{
+    display: flex;
+    justify-content: flex-end;
+    color:rgba(0,0,0,0.6);
+}
+
+.main__content-element:hover{
+    color: black;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #556b2f;
+    cursor: pointer;
+}
+
+.footer{
+    font-family: 'Griffy', sans-serif;
+    background-color:#a76f02;
+    border:0.208vw solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__button{
+    background-color: black;
+    border-radius: 85px;
+    font-size: 3.125vw;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29.236vw;
+    height: 5.208vw;
+}
+.footer__image{
+    height: 9.375vw;
+    width: 9.375vw;
+    cursor: pointer;
+}
+form{
+    border: 0.208vw solid black;
+}
+input{
+    background-color: rgba(168,164,164,0.8);
+    /* border:3px solid black; */
+    font-size: 2.222vw;
+    height: 6.944vw;
+    width: 40.278vw;
+}
+
+/* Адаптив телефон index4 */
+@media screen and (max-width:480px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        font-size: 4.389vw;
+    }
+    .main__images{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .main__links{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+    .main__links-elements{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .footer{
+        border:none;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.222vw;
+    }
+    .footer__button{
+        font-size: 6.222vw;
+        width: 40.236vw;
+        height: 10.208vw;
+    }
+    
+    .footer__image{
+        height: 10.348vh;
+        width: 17.758vw;
+        margin: 5px;
+    }
+    form{
+        border: 0.208vw solid black;
+    }
+    input{
+        font-size: 3.125vw;
+        width: 57.236vw;
+        height: 8.208vw;
+    }
+}
+/*Адаптив планшет index4*/
+@media screen  and (min-width:481px) and (max-width:800px) {
+    .main{
+        font-size: 2.778vw;
+    }
+    .main__images{
+        width: 50%;
+    }
+    .main__links{
+        font-size: 2.245vw;
+        padding: 0.366vw;
+    }
+    .footer{
+        padding: 5px;
+    }
+    .footer__button{
+        width: 30.236vw;
+        height: 6.208vw;
+    }
+    
+    .footer__image{
+        height: 9.375vw;
+        width: 9.375vw;
+    }
+    input{
+        height: 5.944vw;
+    }
+}
+/*чтобы не до*бались)*/
+@media screen  and (min-width:801px) and (max-width:1400px){
+    .main__images{
+        width: 50%;
+    }
+}

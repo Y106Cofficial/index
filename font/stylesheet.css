@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Griffy';
+    src: url('Griffy-Regular.eot');
+    src: local('Griffy'), local('Griffy-Regular'),
+        url('Griffy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Griffy-Regular.woff2') format('woff2'),
+        url('Griffy-Regular.woff') format('woff'),
+        url('Griffy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

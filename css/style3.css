@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    background-color: #A76F02;
+    color: #000;
+    font-family: 'Griffy', sans-serif;
+    font-size:2.431vw;
+}
+.main__page{
+    max-width: 100vw;
+    height: 16.597vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid black;
+}
+.main__page-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.main__page-elements{
+    width: 71.875vw;
+    height: 15.972vw;
+}
+.main__page-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.main__page-link{
+    display: flex;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.6);
+}
+a:hover{
+    color: #556B2F;
+    cursor: pointer;
+}
+.footer{
+    font-family: 'Griffy', sans-serif;
+    background-color:#a76f02;
+    border:0.208vw solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__button{
+    background-color: black;
+    border-radius: 85px;
+    font-size: 3.125vw;
+    color: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29.236vw;
+    height: 5.208vw;
+}
+button:hover{
+    background-color: yellowgreen;
+}
+.footer__image{
+    height: 9.375vw;
+    width: 9.375vw;
+    cursor: pointer;
+}
+form{
+    border: 0.208vw solid black;
+}
+input{
+    background-color: rgba(168,164,164,0.8);
+    font-size: 2.222vw;
+    height: 6.944vw;
+    width: 40.278vw;
+}
+
+/*телефон index3*/
+@media screen and (max-width:480px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        font-size:4.431vw;
+    }
+    .main__page{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid white;
+    }
+    .main__page-elements{
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+        border:none;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.222vw;
+    }
+    .footer__button{
+        font-size: 6.222vw;
+        width: 40.236vw;
+        height: 10.208vw;
+    }
+    
+    .footer__image{
+        height: 10.348vh;
+        width: 17.758vw;
+        margin: 5px;
+    }
+    form{
+        border: 0.208vw solid black;
+    }
+    input{
+        font-size: 3.125vw;
+        width: 57.236vw;
+        height: 8.208vw;
+    }
+    
+}
+
+/*index3 планшет*/
+@media screen and (min-width:481px) and (max-width:800px) {
+    .main{
+        font-size:2.6vw;
+    }
+    .main__page{
+        height: 20vw;
+    }
+    .footer{
+        border:none;
+        padding: 5px;
+    }
+    .footer__button{
+        width: 30.236vw;
+        height: 6.208vw;
+    }
+    
+    .footer__image{
+        height: 9.375vw;
+        width: 9.375vw;
+    }
+    input{
+        height: 5.944vw;
+    }
+    
+}

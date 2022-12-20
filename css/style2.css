@@ -1,0 +1,205 @@
+
+*{ 
+    margin: 0px; 
+    padding: 0px; 
+} 
+.main{ 
+    background-color: #A76F02;  
+    display: flex; 
+    flex-direction: column; 
+} 
+.main__text{ 
+    justify-content:center; 
+    align-items: flex-start; 
+    color: #000; 
+    font-family: 'Griffy', sans-serif; 
+    font-size:2.222vw; 
+} 
+.main__elements{ 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
+} 
+.main__element-1{ 
+    background-image: url(../img/history\ page\ 2.svg); 
+    background-size: cover; /* фон занимает всю площадь блока */ 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 116.441vh; 
+    width: 29.236vw; 
+    display: flex; 
+    margin-bottom: 0px; 
+    align-items: flex-end; 
+} 
+.main__button{ 
+    height: 8.099vh; 
+    width: 29.236vw; 
+    background-color: rgba(167, 111, 2, 0.8); 
+    color: rgba(255, 255, 255, 0.5); 
+    border-radius: 85px; 
+    font-family: 'Griffy', sans-serif; 
+    font-size: 3.125vw; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+a:hover{ 
+    color: #556B2F; 
+    cursor: pointer; 
+} 
+button:hover{ 
+    background-color: #A76F02; 
+} 
+ 
+.main__element-2{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    max-height: 856px;  
+} 
+ 
+form{ 
+    border: 0.208vw solid black; 
+} 
+input{ 
+    background-color: rgba(168,164,164,0.8); 
+    font-size: 2.222vw; 
+    height: 4.931vw; 
+    width: 68.764vw; 
+} 
+.main__list{ 
+    font-family: 'Griffy', sans-serif; 
+    font-size: 3.125vw; 
+    list-style-type: none; 
+} 
+.main__video{ 
+    display: flex; 
+    justify-content: space-between; 
+    width: 62.500vw; 
+    height: 34.722vw; 
+    align-items: center; 
+} 
+.main__video-element{
+    width: 27.778vw;
+    height: 20.000vh;
+}
+ 
+ /*telefon*/
+@media screen and (max-width:480px) { 
+    .main{
+        height: 1370px;
+    }
+    .main__text{ 
+        justify-content:center; 
+        align-items: flex-start; 
+        font-size:5.222vw; 
+    } 
+    .main__elements{ 
+        display: flex;
+        flex-direction: column;  
+    } 
+    .main__element-1{ 
+        width: 100%; 
+        height: 66.441vh; 
+        display: flex; 
+        margin-bottom: 0px; 
+        align-items: flex-end; 
+    } 
+    .main__button{  
+        width: 100%; 
+        border-radius: 85px; 
+        font-size: 9.125vw; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    } 
+     
+    .main__element-2{ 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center; 
+        height: 63.575vh; 
+    } 
+    .main__video{
+        display: flex; 
+        flex-direction: column;     
+    }
+    input{ 
+        height: 6.931vw;
+        width: 83.764vw; 
+    } 
+    .main__list{ 
+        font-size: 5.222vw; 
+    } 
+    .main__video-element{
+        width: 82.778vw;
+        height: 20.000vh;
+        margin-bottom: 40px;
+    }
+   
+} 
+@media screen and (min-width:481px) and (max-width:800px) { 
+    .main{ 
+        display: flex; 
+        flex-direction: column; 
+     
+    } 
+    .main__text{ 
+        justify-content:center; 
+        align-items: flex-start; 
+        font-size:2.222vw; 
+    } 
+    .main__elements{ 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: flex-start; 
+    } 
+    .main__element-1{ 
+        background-image: url(../img/history\ page\ 2.svg); 
+        background-size: cover; /* фон занимает всю площадь блока */ 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        height: 856px; 
+        width: 29.236vw; 
+        display: flex; 
+        margin-bottom: 0px; 
+        align-items: flex-end; 
+    } 
+    .main__button{ 
+        height: 75px; 
+        width: 421px; 
+        border-radius: 85px; 
+        font-size: 3.125vw; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    } 
+     
+    .main__element-2{ 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center; 
+        max-height: 856px; 
+    } 
+     
+    form{ 
+        border: 0.208vw solid black; 
+    } 
+    input{ 
+        height: 4.931vw; 
+        width: 70.764vw; 
+    } 
+    .main__list{ 
+        font-size: 3.125vw; 
+    } 
+    .main__video{ 
+        display: flex; 
+        justify-content: space-between; 
+        width: 62.500vw; 
+        height: 34.722vw; 
+        align-items: center; 
+    } 
+}

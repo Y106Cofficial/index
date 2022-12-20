@@ -1,0 +1,77 @@
+*{
+    font-family:'Griffy', sans-serif;
+}
+.header{
+    background-color: black;
+    color: white;
+    font-size: 3.472vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.header__logo{
+    height: 3.194vw;
+    width: 3.194vw;
+}
+.main__button-element{
+    background-color: #A76F02;
+    border-radius: 66px;
+    width: 15.972vw; 
+    height: 5.556vw;
+    color:black;
+    font-size: 2.778vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -6.944vw; 
+}
+.main__image{ 
+   width: 100%;
+   z-index: 2;
+}
+.main__image-element{
+    display: none;
+}
+.footer{
+    display: none;
+}
+a:hover{
+    color: #556B2F; 
+}
+button:hover{
+    background-color: yellowgreen;
+}
+
+@media screen and (max-width: 480px) {
+    .header__logo{
+        height: 2.708vw;
+        width: 2.708vw;
+    }
+    .header__navigation{
+        margin-left: 2.083vw;
+    }
+    .main__button{
+        display:none;
+    }
+    .main__image, .main__image-element{
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .main__group{
+        display: block;
+        margin-bottom: 195px;
+    }  
+    .footer{
+        display: block;
+        background-color: black;
+        color: white;
+        font-size: 6.250vw;
+        text-align: center;
+    }
+}
