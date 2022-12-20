@@ -7,7 +7,7 @@
     font-size: 3.472vw;
     display: flex;
     justify-content:space-around;
-    align-items: center;
+    /* align-items: center; */
 }
 .header__logo{
     height: 3.194vw;
@@ -41,7 +41,8 @@
     display: none;
 }
 a:hover{
-    color: #556B2F; 
+    color: #556B2F;
+    transition: 0.4s; 
 }
 button:hover{
     background-color: yellowgreen;
